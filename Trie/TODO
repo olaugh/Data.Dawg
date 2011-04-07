@@ -1,0 +1,12 @@
+separate Trie type to separate file
+  Data.Anagrammer.Trie?
+  should have functions for creating, writing, loading
+  written tries should include info on
+    minimum version of Trie class
+    the alphabet that is used
+    sizes of nodes' fields
+    names of encoded wordlists
+
+Anagrammer
+  queries for wordValidity
+  isWord :: Trie -> ByteString -> Boolean

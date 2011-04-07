@@ -67,10 +67,6 @@ getIndex child = child .&. indexMask
 oneBits :: Word32 -> [Int]
 oneBits w = filter (testBit w) [1..26]
 
-flipEndian :: [Word8] -> [Word8]
-flipEndian (a:b:c:d:xs) = (d:c:b:a:(flipEndian xs))
-flipEndian _ = []
-
 main :: IO ()
 main = do
   dawgBS <- B.readFile "csw.dawg"
